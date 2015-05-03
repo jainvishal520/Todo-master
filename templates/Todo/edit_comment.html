@@ -1,0 +1,18 @@
+{% extends "Todo/base.html" %}
+{% block title %}Edit Comment: Todo Lists{% endblock %}
+{% block section %}
+<div class="container">
+         <div class="col-sm-8 col-sm-offset-1">
+            <div id="controls">
+               <form role="form" action="/todo/comment/{{id}}/edit" method="post">{% csrf_token %}
+                  <label style="font-size:26px" for="name"  class="control-label">Update your comment</label>
+                  <textarea placeholder="" rows="5" name="message" id="textbox" cols="60" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">{{desc}}</textarea>
+                  <input type="hidden" name="id" value="{{id}}">
+                  <span ><button style="margin-top:10px" class="btn btn-default" type="submit" id="button">Modify</button></span><br>
+               </form>
+            </div>
+         </div>
+</div>
+{% endblock %}
+
+

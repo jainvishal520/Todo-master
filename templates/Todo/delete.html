@@ -1,0 +1,43 @@
+{% extends "Todo/base.html" %}
+{% block title %}Delete Tasks: Todo Lists{% endblock %}
+{% block section %}
+<section id="main-content">
+         <section class="wrapper">
+            <div class="col-sm-10 col-sm-offset-1">
+               <h1>Delete Tasks</h1>
+               <section class="panel panel-table" >
+                  <div class="panel-body">
+                     <div class="adv-table delete-table">
+                        <form role="form" method="post" action="">
+                           {% csrf_token %}
+                           <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered " id="task">
+                              <thead class="panel-table-head">
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Owner</th>
+                                    <th class="">Created On</th>
+                                    <th class="">Due Date</th>
+                                    <th class="">Delete</th>
+                                 </tr>
+                              </thead>
+                              <tbody id="task-body">
+                              </tbody>
+                           </table>
+                           <center>
+                              <input class="btn btn-danger" type="submit" value="delete">
+                           </center>
+                        </form>
+                        
+                     </div>
+                  </div>
+               </section>
+            </div>
+            </div>
+            <!-- page end-->
+         </section>
+</section>
+{% endblock %}
+{% block js %}
+<script src="{{STATIC_URL}}js/delete.js"></script>
+{% endblock %}
+ 

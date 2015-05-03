@@ -1,0 +1,221 @@
+/*
+ * Project Name: Todolist
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #fff;
+    font-family: "Corben";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+	text-align: center;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #1192D3;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+	font-weight: 500;
+	font-size: 14px;
+	
+}
+
+
+.navbar-inverse {
+	background:#2C3E50 ; 
+	border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #000
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-brand i {
+	color: #ff7878;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
+
+
+/***** MODAL CONTACT *****/
+.modal-content {
+	border-radius: 0px;
+
+}
+
+.modal-header {
+	background: #fff;
+	color: white;
+}
+
+.modal-header h4 {
+	font-weight: 700;
+}
+
+.modal-body {
+	background: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+}
+
+.modal-footer {
+	background: #f2f2f2;
+	margin-top: 0px; 
+}
+
+/*advanced table*/
+.general-table .progress {
+    margin-bottom:0;
+}
+.adv-table table tr td {
+    padding:10px;
+}
+.adv-table table.display thead th {
+    border-bottom:1px solid #DDDDDD;
+    padding:10px;
+}
+tr.odd.gradeA td.sorting_1,tr.odd td.sorting_1,tr.even.gradeA td.sorting_1 {
+    background:none;
+}
+td.details {
+  
+}
+td.details table tr td,.dataTable tr:last-child {
+    border:none;
+}
+.adv-table table.display tr.odd.gradeA {
+    background-color:#F9F9F9;
+}
+.adv-table table.display tr.even.gradeA {
+    background-color:#FFFFFF;
+}
+.adv-table .dataTables_filter label input {
+    float:right;
+    margin-left:10px;
+    width:78%;
+}
+.adv-table .dataTables_filter label {
+    line-height:33px;
+    width:100%;
+}
+.adv-table .dataTables_length select {
+    display:inline-block;
+    margin:0 10px 0 0;
+    padding:5px 8px;
+    width:65px;
+}
+.adv-table .dataTables_info,.dataTables_paginate {
+    padding:15px 0;
+}
+.adv-table .dataTables_length,.adv-table .dataTables_filter {
+    padding:15px 0;
+}
+.cke_chrome {
+    border:none !important;
+}
+.editable-table .dataTables_filter {
+    width:80%;
+}
+tr.odd.gradeX td.sorting_1,tr.even.gradeX td.sorting_1,table.display tr.even.gradeX,table.display tr.gradeX,tr.even.gradeU td.sorting_1,tr.even td.sorting_1,table.display tr.even.gradeC,table.display tr.gradeC,tr.odd.gradeC td.sorting_1,table.display tr.even.gradeU,table.display tr.gradeU,tr.odd.gradeU td.sorting_1 {
+    background: none !important;
+}
+.panel-table{
+background:	#F8F8F8
+}
+.panel-table-head{
+background:#fff
+}
+.task{
+padding:5px
+}
+.inputDisabled{
+background:#fff;
+color:#000;
+padding:5px
+}
+/*media queries*/
+@media  (max-width:1024px) {
+.task-table{
+overflow:auto;
+}
+}
+@media  (max-width:535px) {
+.delete-table{
+overflow:auto;
+}
+}

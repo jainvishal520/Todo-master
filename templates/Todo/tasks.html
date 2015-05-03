@@ -1,0 +1,43 @@
+{% extends "Todo/base.html" %}
+{% block title %}Tasks: Todo Lists{% endblock %}
+{% block section %}
+<section id="main-content">
+         <section class="wrapper">
+               <div class="col-sm-10 col-sm-offset-1">
+                  <h1><span class="fa fa-edit">Task</span></h1>
+                  <section class="panel panel-table" >
+                     <div class="panel-body">
+                     {% if messages %}
+                        {% for message in messages %}
+                           <div class="alert alert-info alert-dismissable">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                              <h6>{{message|safe}}</h6>
+                           </div>
+                        {% endfor %}
+                     {% endif %}
+                        <div  class="adv-table task-table">
+                           <table  class="table table-bordered table-responsive " id="task">
+                              <thead class="panel-table-head">
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>Owner</th>
+                                    <th>Created On</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                    <th>Priority</th>
+                                    <th>Comments</th>
+                                 </tr>
+                              </thead>
+                              <tbody id="task-body">    
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </section>
+               </div>          
+         </section>
+</section>
+{% endblock %}
+{% block js %}
+<script src="{{STATIC_URL}}js/tasks.js"></script>
+{% endblock %}      

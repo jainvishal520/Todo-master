@@ -1,0 +1,4 @@
+Django==1.6
+argparse==1.2.1
+pytz==2014.3
+wsgiref==0.1.2
