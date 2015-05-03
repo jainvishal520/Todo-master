@@ -1,11 +1,10 @@
 Todo Application
 ================
 
-Language: Python
+Language: Python,Javascript
 
-Framework: Django
+Framework: Django,Bootstrap
 
-Project Url: http://todo.kantesh.com
 
 Server
 ------
